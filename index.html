@@ -1,337 +1,460 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Makhtar Fall – Portfolio</title>
+  <title>Makhtar Fall — Ingénieur Logiciel</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-
 <body>
 
-  <nav>
-    <div class="nav-container">
-      <div class="nav-logo">MF.</div>
-      <div class="nav-links">
-        <a href="#about">Profil</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Expérience</a>
-        <a href="#realisations">Réalisations</a>
-        <a href="#contact">Contact</a>
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#hero" class="sitename">Makhtar Fall<span>.</span></a>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#hero" class="active">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#resume">Parcours</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" id="mobileToggle"><i class="bi bi-list"></i></button>
+    <a href="#contact" class="btn-started">Me contacter</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-avatar">👨🏾‍💻<div class="sdot"></div></div>
+    <div class="hero-tag">Disponible pour de nouveaux projets</div>
+    <h2>Makhtar Fall</h2>
+    <div class="hero-typed">Je suis <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span></div>
+    <div class="hero-social">
+      <a href="mailto:Makhtar.boss10@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+      <a href="tel:+221774664794" title="Téléphone"><i class="bi bi-telephone-fill"></i></a>
+      <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><i class="bi bi-chevron-down"></i></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-alt">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">À propos</span>
+      <h2>Qui suis-je ?</h2>
+      <p>Ingénieur logiciel passionné, combinant développement web, design graphique et production audiovisuelle.</p>
+    </div>
+    <div class="about-grid">
+      <!-- Profile Card -->
+      <div class="profile-card">
+        <div class="profile-header">
+          <div class="profile-avatar-ph">👨🏾‍💻<div class="ps"></div></div>
+          <h3>Makhtar Fall</h3>
+          <div class="profile-role">Ingénieur Logiciel</div>
+        </div>
+        <div class="profile-stats">
+          <div class="stat-item"><h4>3+</h4><p>Ans exp.</p></div>
+          <div class="stat-item"><h4>2</h4><p>Postes</p></div>
+          <div class="stat-item"><h4>Bac+5</h4><p>Niveau</p></div>
+        </div>
+        <div class="profile-info">
+          <div class="info-row"><i class="bi bi-geo-alt-fill"></i><div><span class="lbl">Localisation</span><span class="val">Zac Mbao, Dakar, Sénégal</span></div></div>
+          <div class="info-row"><i class="bi bi-telephone-fill"></i><div><span class="lbl">Téléphone</span><span class="val">+221 77 466 47 94</span></div></div>
+          <div class="info-row"><i class="bi bi-envelope-fill"></i><div><span class="lbl">Email</span><span class="val" style="font-size:.78rem">Makhtar.boss10@gmail.com</span></div></div>
+          <div class="info-row"><i class="bi bi-mortarboard-fill"></i><div><span class="lbl">Diplôme</span><span class="val">Master 2 — Ingénierie Logicielle</span></div></div>
+          <div class="info-row"><i class="bi bi-briefcase-fill"></i><div><span class="lbl">Statut</span><span class="val" style="color:var(--green)">Ouvert aux opportunités</span></div></div>
+        </div>
+        <div class="profile-actions">
+          <a href="mailto:Makhtar.boss10@gmail.com" class="btn-prim"><i class="bi bi-envelope"></i> Email</a>
+          <a href="#portfolio" class="btn-sec"><i class="bi bi-grid"></i> Portfolio</a>
+        </div>
+      </div>
+      <!-- Right -->
+      <div class="content-wrapper">
+        <div class="bio-section">
+          <span class="section-tag">À propos de moi</span>
+          <h2>Créer des solutions numériques innovantes</h2>
+          <p>Ingénieur logiciel en formation (Master 2 à l'<strong style="color:var(--heading)">Université Numérique Cheikh Hamidou Kane</strong>), avec une solide base en conception et développement d'applications, ainsi qu'un intérêt marqué pour les nouvelles technologies.</p>
+          <p>Je combine mes compétences techniques avec une expérience en <strong style="color:var(--heading)">infographie et production audiovisuelle</strong>, ce qui me permet d'allier créativité et rigueur dans mes projets.</p>
+        </div>
+        <div class="details-grid">
+          <div class="detail-item"><i class="bi bi-briefcase"></i><div><span>Expérience</span><strong>3+ Années</strong></div></div>
+          <div class="detail-item"><i class="bi bi-mortarboard"></i><div><span>Diplôme</span><strong>Master 2</strong></div></div>
+          <div class="detail-item"><i class="bi bi-geo-alt"></i><div><span>Ville</span><strong>Dakar, Sénégal</strong></div></div>
+          <div class="detail-item"><i class="bi bi-translate"></i><div><span>Langues</span><strong>Français · Anglais · Wolof</strong></div></div>
+          <div class="detail-item"><i class="bi bi-phone"></i><div><span>Téléphone</span><strong>+221 77 466 47 94</strong></div></div>
+          <div class="detail-item"><i class="bi bi-check-circle"></i><div><span>Statut</span><strong style="color:var(--green)">Disponible</strong></div></div>
+        </div>
+        <div class="skills-showcase">
+          <span class="section-tag">Compétences clés</span>
+          <h3>Maîtrise technique</h3>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Développement Web (HTML/CSS/JS/PHP)</span><span class="skill-percent">85%</span></div><div class="progress"><div class="progress-bar" data-width="85"></div></div></div>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Frameworks (React, Angular, Laravel)</span><span class="skill-percent">78%</span></div><div class="progress"><div class="progress-bar" data-width="78"></div></div></div>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">CMS (WordPress, Drupal, Sitejet)</span><span class="skill-percent">82%</span></div><div class="progress"><div class="progress-bar" data-width="82"></div></div></div>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Design Graphique (Photoshop, Illustrator)</span><span class="skill-percent">80%</span></div><div class="progress"><div class="progress-bar" data-width="80"></div></div></div>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Production Audiovisuelle</span><span class="skill-percent">75%</span></div><div class="progress"><div class="progress-bar" data-width="75"></div></div></div>
+        </div>
+        <div class="skills-tags-section">
+          <h3>Stack complète</h3>
+          <div class="tags-group"><div class="tags-group-label">🌐 Développement Web</div><div class="tags-wrap"><span class="stag">HTML</span><span class="stag">CSS</span><span class="stag">JavaScript</span><span class="stag">PHP</span><span class="stag">Bootstrap</span><span class="stag">React</span><span class="stag">Angular</span><span class="stag">Laravel</span></div></div>
+          <div class="tags-group"><div class="tags-group-label">🗄️ CMS & Base de données</div><div class="tags-wrap"><span class="stag">WordPress</span><span class="stag">Drupal</span><span class="stag">Sitejet</span><span class="stag">MySQL</span></div></div>
+          <div class="tags-group"><div class="tags-group-label">🎨 Design & Audiovisuel</div><div class="tags-wrap"><span class="stag">Photoshop</span><span class="stag">Illustrator</span><span class="stag">Premiere Pro</span><span class="stag">After Effects</span><span class="stag">Final Cut</span><span class="stag">CapCut</span><span class="stag">Davinci Resolve</span></div></div>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <section class="hero" id="top">
-    <div class="hero-glow"></div>
-    <div class="hero-glow2"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-tag">Disponible pour de nouveaux projets</div>
-        <h1>Makhtar<br><em>Fall</em></h1>
-        <p class="hero-sub">Ingénieur logiciel passionné par le développement web, l'architecture cloud et l'innovation numérique.</p>
-        <div class="hero-actions">
-          <a href="#realisations" class="btn-primary">Voir mes réalisations</a>
-          <a href="#contact" class="btn-secondary">Me contacter</a>
+<!-- RESUME -->
+<section id="resume">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">Parcours</span>
+      <h2>Expérience & Formation</h2>
+      <p>Mon parcours professionnel et académique, alliant ingénierie logicielle, design digital et production audiovisuelle.</p>
+    </div>
+    <div class="resume-grid">
+      <div>
+        <div class="section-header"><span class="section-badge">Expérience</span><h2>Parcours professionnel</h2><p>Des rôles variés qui ont forgé ma polyvalence entre développement, design et audiovisuel.</p></div>
+        <div class="exp-card featured">
+          <div class="card-header"><div class="company-logo"><i class="bi bi-buildings"></i></div><div class="period-badge">En cours</div></div>
+          <h3>Responsable Contenus Digitaux & Webmaster</h3>
+          <span class="company-name">NK Partners</span>
+          <span class="duration">Janvier 2025 – Présent</span>
+          <p class="description">Conception et développement d'applications web avec Sitejet, WordPress, Drupal. Gestion de bases de données MySQL et optimisation des requêtes. Réalisation de visuels et production de contenus audiovisuels.</p>
+          <div class="skills-tags"><span class="skill-tag">WordPress</span><span class="skill-tag">Drupal</span><span class="skill-tag">MySQL</span><span class="skill-tag">Photoshop</span><span class="skill-tag">Premiere Pro</span></div>
+        </div>
+        <div class="exp-card">
+          <div class="card-header"><div class="company-logo"><i class="bi bi-palette"></i></div></div>
+          <h3>Responsable Création Contenus Digitaux</h3>
+          <span class="company-name">Africa Highlight Group SAS</span>
+          <span class="duration">Octobre 2023 – Janvier 2025</span>
+          <p class="description">Réalisation de visuels et supports de communication : affiches, flyers, logos, bannières web. Gestion de la stratégie de contenu digital.</p>
+          <div class="skills-tags"><span class="skill-tag">Illustrator</span><span class="skill-tag">Photoshop</span><span class="skill-tag">Contenu digital</span></div>
+        </div>
+        <div class="exp-card">
+          <div class="card-header"><div class="company-logo"><i class="bi bi-camera-video"></i></div></div>
+          <h3>Technicien Audiovisuel</h3>
+          <span class="company-name">OXY7 TV & OXY7.NET</span>
+          <span class="duration">Juin 2022 – Octobre 2022</span>
+          <p class="description">Réalisation et montage des émissions, cadrage et régie. Gestion des équipements de production télévisuelle.</p>
+          <div class="skills-tags"><span class="skill-tag">Montage vidéo</span><span class="skill-tag">Cadrage</span><span class="skill-tag">Régie</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="section-header"><span class="section-badge">Formation</span><h2>Parcours académique</h2><p>Une formation solide en ingénierie logicielle, complétée par des certifications pratiques.</p></div>
+        <div class="education-timeline">
+          <div class="timeline-track">
+            <div class="timeline-item">
+              <div class="timeline-marker"><i class="bi bi-mortarboard-fill"></i></div>
+              <div class="timeline-content">
+                <div class="education-meta"><span class="year-range">2021 – 2023</span><span class="degree-level">Master</span></div>
+                <h4>Master — Ingénierie Logicielle</h4>
+                <span class="institution">Université Numérique Cheikh Hamidou Kane, Dakar</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"><i class="bi bi-book"></i></div>
+              <div class="timeline-content">
+                <div class="education-meta"><span class="year-range">2018 – 2021</span><span class="degree-level">Licence</span></div>
+                <h4>Licence — Informatique, Ingénierie Logicielle</h4>
+                <span class="institution">Université Numérique Cheikh Hamidou Kane, Dakar</span>
+                <p class="description" style="margin-top:5px">Mathématiques Appliquées et Informatique – option Ingénierie Logicielle</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"><i class="bi bi-patch-check-fill"></i></div>
+              <div class="timeline-content">
+                <div class="education-meta"><span class="year-range">6 mois</span><span class="degree-level">Certif.</span></div>
+                <h4>Développement Web & Mobile</h4>
+                <span class="institution">École Supérieure ESTEL (Groupe ESTEL)</span>
+                <p class="description" style="margin-top:5px">Certificat de Spécialité en Développement d'Applications Web et Mobile</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"><i class="bi bi-camera-video-fill"></i></div>
+              <div class="timeline-content">
+                <div class="education-meta"><span class="year-range">3 mois</span><span class="degree-level">Certif.</span></div>
+                <h4>Formation Audiovisuel</h4>
+                <span class="institution">École de Formation 10H TECH</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"><i class="bi bi-award-fill"></i></div>
+              <div class="timeline-content">
+                <div class="education-meta"><span class="year-range">2017</span><span class="degree-level">Bac</span></div>
+                <h4>Baccalauréat — Série S2</h4>
+                <span class="institution">Lycée Abdoulaye Sadji, Rufisque</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <main>
-    <section id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-num">01.</span>
-          <h2>À propos de moi</h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>Passionné par la résolution de problèmes complexes et la création d'expériences numériques de haute qualité, j'accompagne les entreprises dans la conception et le déploiement d'applications web robustes et évolutives.</p>
-            <p>Mon approche combine rigueur technique, sensibilité design et quête constante de performance.</p>
-          </div>
-          <div class="about-stats">
-            <div class="stat-card">
-              <span class="stat-num">5+</span>
-              <span class="stat-label">Années d'expérience</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">20+</span>
-              <span class="stat-label">Projets terminés</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-num">02.</span>
-          <h2>Compétences</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-icon">🎨</div>
-            <h3>Frontend Development</h3>
-            <p>HTML5, CSS3, Modern JavaScript, React.js, Next.js, responsive design et intégrations pixel-perfect.</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">⚙️</div>
-            <h3>Backend & API</h3>
-            <p>Node.js, Express, Python, architectures RESTful, GraphQL et gestion sécurisée des flux de données.</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">🗄️</div>
-            <h3>Bases de données</h3>
-            <p>Conception et optimisation SQL (PostgreSQL, MySQL) et NoSQL (MongoDB, Firebase).</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">🚀</div>
-            <h3>DevOps & Cloud</h3>
-            <p>Déploiement continu (CI/CD), conteneurisation Docker, Git/GitHub et hébergement cloud performant.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-num">03.</span>
-          <h2>Parcours professionnel</h2>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2024 - Présent</div>
-            <div class="timeline-content">
-              <h3>Ingénieur Full Stack Senior</h3>
-              <h4>TechSolutions International</h4>
-              <p>Architecture et développement d'applications métiers SaaS critiques, optimisation des temps de réponse serveurs et encadrement technique des développeurs juniors.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2021 - 2024</div>
-            <div class="timeline-content">
-              <h3>Développeur Web Full Stack</h3>
-              <h4>Digital Agency Studio</h4>
-              <p>Création d'écosystèmes e-commerce sur mesure, intégrations de passerelles de paiement sécurisées et conception d'API robustes pour des clients internationaux.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="realisations">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-num">04.</span>
-          <h2>Réalisations</h2>
-        </div>
-
-        <div class="portfolio-filters">
-          <button class="filter-btn active" data-filter="all">Tout</button>
-          <button class="filter-btn" data-filter="web">Applications Web</button>
-          <button class="filter-btn" data-filter="design">Design & UI</button>
-          <button class="filter-btn" data-filter="admin">Espace Admin</button>
-        </div>
-
-        <div id="projects-grid">
-          </div>
-
-        <div class="admin-panel">
-          <h3>Ajouter un projet à la galerie (Démo Locale)</h3>
-          <form id="project-form" onsubmit="event.preventDefault(); handleAddProject();">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="projTitle">Nom du projet</label>
-                <input type="text" id="projTitle" required placeholder="Ex: Dashboard Analytics">
-              </div>
-              <div class="form-group">
-                <label for="projCategory">Catégorie</label>
-                <select id="projCategory">
-                  <option value="web">Application Web</option>
-                  <option value="design">Design & UI</option>
-                  <option value="admin">Espace Admin</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="projDesc">Description succincte</label>
-              <textarea id="projDesc" rows="3" required placeholder="Expliquez brièvement le projet..."></textarea>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="projTech">Technologies (séparées par des virgules)</label>
-                <input type="text" id="projTech" placeholder="Ex: React, Node.js, Tailwind">
-              </div>
-              <div class="form-group">
-                <label for="projLink">Lien du projet</label>
-                <input type="url" id="projLink" placeholder="https://monprojet.com">
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <label>Choisir un visuel / émoji de couverture</label>
-              <div class="emoji-selector">
-                <span class="emoji-opt selected" data-emoji="💻" onclick="selectEmoji(this)">💻</span>
-                <span class="emoji-opt" data-emoji="📱" onclick="selectEmoji(this)">📱</span>
-                <span class="emoji-opt" data-emoji="📊" onclick="selectEmoji(this)">📊</span>
-                <span class="emoji-opt" data-emoji="🎨" onclick="selectEmoji(this)">🎨</span>
-                <span class="emoji-opt" data-emoji="🛍️" onclick="selectEmoji(this)">🛍️</span>
-                <span class="emoji-opt" data-emoji="🔒" onclick="selectEmoji(this)">🔒</span>
-              </div>
-            </div>
-
-            <button type="submit" class="btn-primary" style="border:none; cursor:pointer;">Ajouter au Portfolio</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-num">05.</span>
-          <h2>Me contacter</h2>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>Discutons de votre projet</h3>
-            <p>Vous avez une idée d'application, un besoin de renfort d'équipe ou une question technique ? Laissez-moi un message.</p>
-            <div class="contact-details">
-              <p>📍 Dakar, Sénégal</p>
-              <p>📧 contact@makhtarfall.dev</p>
-              <p>💼 disponible sur LinkedIn / GitHub</p>
-            </div>
-          </div>
-          <div class="contact-form-container">
-            <form class="contact-form" onsubmit="event.preventDefault(); showToast();">
-              <div class="form-group">
-                <label>Votre nom</label>
-                <input type="text" required placeholder="Nom complet">
-              </div>
-              <div class="form-group">
-                <label>Votre adresse e-mail</label>
-                <input type="email" required placeholder="adresse@email.com">
-              </div>
-              <div class="form-group">
-                <label>Message</label>
-                <textarea rows="5" required placeholder="Détails de votre demande..."></textarea>
-              </div>
-              <button type="submit" class="btn-primary" style="border:none; cursor:pointer; width:100%;">Envoyer la demande</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 <span>Makhtar Fall</span>. Tous droits réservés. Propulsé par la rigueur et le code.</p>
+<!-- SERVICES -->
+<section id="services" class="section-alt">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">Services</span>
+      <h2>Ce que je propose</h2>
+      <p>Des services complets alliant développement web, design graphique et production audiovisuelle.</p>
     </div>
-  </footer>
+    <div class="services-grid">
+      <div class="service-item"><div class="icon-wrapper"><i class="bi bi-code-slash"></i></div><h4>Développement Web</h4><p>Conception d'applications web avec HTML, CSS, JS, PHP et frameworks modernes comme React, Laravel et Angular.</p><a href="#contact" class="read-more"><span>Démarrer</span><i class="bi bi-arrow-right"></i></a></div>
+      <div class="service-item featured"><div class="featured-tag">Phare</div><div class="icon-wrapper"><i class="bi bi-layout-text-window-reverse"></i></div><h4>CMS & Sites Web</h4><p>Création et gestion de sites WordPress, Drupal, Sitejet. Optimisation des bases de données MySQL.</p><a href="#contact" class="read-more"><span>Démarrer</span><i class="bi bi-arrow-right"></i></a></div>
+      <div class="service-item"><div class="icon-wrapper"><i class="bi bi-palette"></i></div><h4>Design Graphique</h4><p>Affiches, logos, identité visuelle, bannières web. Maîtrise de Photoshop et Illustrator.</p><a href="#contact" class="read-more"><span>Démarrer</span><i class="bi bi-arrow-right"></i></a></div>
+      <div class="service-item"><div class="icon-wrapper"><i class="bi bi-camera-video"></i></div><h4>Production AV</h4><p>Montage vidéo, spots publicitaires, vidéos institutionnelles avec Premiere Pro, After Effects, Final Cut.</p><a href="#contact" class="read-more"><span>Démarrer</span><i class="bi bi-arrow-right"></i></a></div>
+      <div class="service-item"><div class="icon-wrapper"><i class="bi bi-megaphone"></i></div><h4>Contenu Digital</h4><p>Création et gestion de contenus pour les réseaux sociaux, stratégie de communication en ligne.</p><a href="#contact" class="read-more"><span>Démarrer</span><i class="bi bi-arrow-right"></i></a></div>
+      <div class="service-item"><div class="icon-wrapper"><i class="bi bi-database"></i></div><h4>Base de données</h4><p>Conception, gestion et optimisation de bases de données MySQL pour des performances optimales.</p><a href="#contact" class="read-more"><span>Démarrer</span><i class="bi bi-arrow-right"></i></a></div>
+      <div class="service-item"><div class="icon-wrapper"><i class="bi bi-tools"></i></div><h4>Maintenance</h4><p>Maintenance matérielle (hardware) et logicielle (software) pour la continuité de vos systèmes.</p><a href="#contact" class="read-more"><span>Démarrer</span><i class="bi bi-arrow-right"></i></a></div>
+      <div class="service-item"><div class="icon-wrapper"><i class="bi bi-phone"></i></div><h4>App Mobile</h4><p>Développement d'applications mobiles avec les technologies web modernes et les meilleures pratiques.</p><a href="#contact" class="read-more"><span>Démarrer</span><i class="bi bi-arrow-right"></i></a></div>
+    </div>
+    <div class="cta-box"><div><h3>Transformons votre vision en réalité</h3><p>Collaborons ensemble pour donner vie à vos idées avec des solutions numériques innovantes.</p></div><a href="#contact" class="cta-btn">Démarrer un projet</a></div>
+  </div>
+</section>
 
-  <div id="toast" class="toast">Message envoyé avec succès !</div>
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">Portfolio</span>
+      <h2>Mes Réalisations</h2>
+      <p>Ajoutez vos projets en développement web, design graphique et production audiovisuelle.</p>
+    </div>
+    <div class="portfolio-header-row">
+      <div class="portfolio-filters" id="filterBtns">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="audiovisuel">Audiovisuel</button>
+        <button class="filter-btn" data-filter="cms">CMS</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+      <button class="add-project-btn" onclick="openModal()"><i class="bi bi-plus-lg"></i> Ajouter une réalisation</button>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+      <div class="empty-portfolio" id="emptyState">
+        <div class="empty-icon">🚀</div>
+        <p>Aucune réalisation pour l'instant.<br>Cliquez sur <strong>Ajouter une réalisation</strong> pour commencer !</p>
+      </div>
+    </div>
+    <div class="portfolio-bottom" id="portfolioBottom" style="display:none">
+      <div><h3>Ce travail vous intéresse ?</h3><p>Collaborons ensemble sur votre prochain projet digital.</p></div>
+      <a href="#contact" class="cta-btn">Travaillons ensemble</a>
+    </div>
+  </div>
+</section>
 
-  <script>
-    let selectedEmoji = '💻';
-    let projects = [
-      { id: 1, title: 'Plateforme E-commerce', category: 'web', desc: 'Une boutique complète avec panier dynamique et paiement sécurisé.', tech: ['React', 'Node.js', 'Stripe'], link: '#', emoji: '🛍️', size: 'large' },
-      { id: 2, title: 'Dashboard Analytics', category: 'admin', desc: 'Outil de visualisation de données en temps réel pour CRM.', tech: ['Next.js', 'Chart.js', 'Firebase'], link: '#', emoji: '📊', size: 'normal' },
-      { id: 3, title: 'UI Kit Composants', category: 'design', desc: 'Design system moderne basé sur des tokens et accessibilité web.', tech: ['Figma', 'Tailwind', 'Storybook'], link: '#', emoji: '🎨', size: 'normal' },
-      { id: 4, title: 'API Gateway Sécurisée', category: 'web', desc: 'Gestion de trafic, rate-limiting et authentification JWT.', tech: ['Express', 'Redis', 'Docker'], link: '#', emoji: '🔒', size: 'wide' }
-    ];
+<!-- CONTACT -->
+<section id="contact" class="section-alt">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">Contact</span>
+      <h2>Me contacter</h2>
+      <p>Prêt à collaborer ? N'hésitez pas à me contacter pour discuter de votre projet.</p>
+    </div>
+    <div class="contact-layout">
+      <div>
+        <div class="info-item"><div class="icon-wrapper"><i class="bi bi-geo-alt-fill"></i></div><div><h3>Adresse</h3><p>Cité Mantor Diouf, Zac Mbao<br>Dakar, Sénégal</p></div></div>
+        <div class="info-item"><div class="icon-wrapper"><i class="bi bi-telephone-fill"></i></div><div><h3>Téléphone</h3><a href="tel:+221774664794">+221 77 466 47 94</a></div></div>
+        <div class="info-item"><div class="icon-wrapper"><i class="bi bi-envelope-fill"></i></div><div><h3>Email</h3><a href="mailto:Makhtar.boss10@gmail.com">Makhtar.boss10@gmail.com</a></div></div>
+        <div class="info-item"><div class="icon-wrapper"><i class="bi bi-clock-fill"></i></div><div><h3>Disponibilité</h3><p style="color:var(--green);font-weight:600">Ouvert aux opportunités</p></div></div>
+      </div>
+      <div class="contact-form-wrap">
+        <h3>Envoyez-moi un message</h3>
+        <div class="form-row-2">
+          <div class="form-group"><label>Nom complet</label><input type="text" placeholder="Votre nom"></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="votre@email.com"></div>
+        </div>
+        <div class="form-group"><label>Sujet</label><input type="text" placeholder="Objet de votre message"></div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Décrivez votre projet ou votre demande..."></textarea></div>
+        <button class="btn-prim" style="width:100%;padding:12px;font-size:.9rem;border-radius:8px" onclick="showToast('✅ Message envoyé ! Je vous répondrai rapidement.')"><i class="bi bi-send-fill"></i> Envoyer le message</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-    function selectEmoji(el) {
-      document.querySelectorAll('.emoji-opt').forEach(e => e.classList.remove('selected'));
-      el.classList.add('selected');
-      selectedEmoji = el.getAttribute('data-emoji');
-    }
+<footer><p>© 2025 <span>Makhtar Fall</span> · Ingénieur Logiciel · Dakar, Sénégal</p></footer>
 
-    function renderProjects(filter = 'all') {
-      const grid = document.getElementById('projects-grid');
-      grid.innerHTML = '';
-      const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close-btn" onclick="closeModal()"><i class="bi bi-x"></i></button>
+    <h3>Nouvelle réalisation</h3>
+    <p class="modal-sub">Ajoutez un projet à votre portfolio</p>
+    <div class="form-group"><label>Titre du projet *</label><input type="text" id="pTitle" placeholder="Ex : Site e-commerce, Logo entreprise..."></div>
+    <div class="form-group"><label>Catégorie</label>
+      <select id="pCat">
+        <option value="web">🌐 Développement Web</option>
+        <option value="design">🎨 Design Graphique</option>
+        <option value="audiovisuel">🎬 Audiovisuel</option>
+        <option value="cms">🗄️ CMS / WordPress</option>
+        <option value="mobile">📱 Application Mobile</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Description *</label><textarea id="pDesc" placeholder="Décrivez brièvement ce projet, les défis et les résultats..."></textarea></div>
+    <div class="form-row-2">
+      <div class="form-group"><label>Technologies</label><input type="text" id="pTech" placeholder="React, MySQL, Photoshop..."></div>
+      <div class="form-group"><label>Année</label><input type="text" id="pYear" placeholder="2024"></div>
+    </div>
+    <div class="form-group"><label>Lien (optionnel)</label><input type="url" id="pLink" placeholder="https://..."></div>
+    <div class="form-group">
+      <label>Icône</label>
+      <div class="emoji-row" id="emojiRow">
+        <div class="emoji-opt sel" data-e="💻" onclick="pickEmoji(this)">💻</div>
+        <div class="emoji-opt" data-e="🌐" onclick="pickEmoji(this)">🌐</div>
+        <div class="emoji-opt" data-e="🎨" onclick="pickEmoji(this)">🎨</div>
+        <div class="emoji-opt" data-e="📱" onclick="pickEmoji(this)">📱</div>
+        <div class="emoji-opt" data-e="🎬" onclick="pickEmoji(this)">🎬</div>
+        <div class="emoji-opt" data-e="🛒" onclick="pickEmoji(this)">🛒</div>
+        <div class="emoji-opt" data-e="📊" onclick="pickEmoji(this)">📊</div>
+        <div class="emoji-opt" data-e="🏢" onclick="pickEmoji(this)">🏢</div>
+        <div class="emoji-opt" data-e="🎵" onclick="pickEmoji(this)">🎵</div>
+        <div class="emoji-opt" data-e="🚀" onclick="pickEmoji(this)">🚀</div>
+        <div class="emoji-opt" data-e="⭐" onclick="pickEmoji(this)">⭐</div>
+        <div class="emoji-opt" data-e="📰" onclick="pickEmoji(this)">📰</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-prim" style="flex:1;padding:11px;border-radius:8px" onclick="addProject()"><i class="bi bi-plus-circle"></i> Ajouter au portfolio</button>
+      <button class="btn-sec" style="padding:11px 18px;border-radius:8px" onclick="closeModal()">Annuler</button>
+    </div>
+  </div>
+</div>
 
-      filtered.forEach(p => {
-        const card = document.createElement('div');
-        card.className = `project-card ${p.size || 'normal'}`;
-        card.innerHTML = `
-          <div class="project-emoji">${p.emoji}</div>
-          <div class="project-meta">
-            <span class="project-cat">${p.category.toUpperCase()}</span>
-            <h3>${p.title}</h3>
-            <p>${p.desc}</p>
-            <div class="project-techs">${p.tech.map(t => `<span>${t}</span>`).join('')}</div>
-            <div style="margin-top:1.2rem; display:flex; gap:1rem; align-items:center;">
-              <a href="${p.link}" class="project-link">Visiter →</a>
-              <button onclick="removeProject(${p.id})" style="background:none; border:none; color: #f87171; font-size:0.75rem; cursor:pointer; font-family:inherit;">Supprimer</button>
-            </div>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-    }
+<div class="toast" id="toast"></div>
 
-    function handleAddProject() {
-      const title = document.getElementById('projTitle').value;
-      const category = document.getElementById('projCategory').value;
-      const desc = document.getElementById('projDesc').value;
-      const techInput = document.getElementById('projTech').value;
-      const link = document.getElementById('projLink').value || '#';
-      const tech = techInput ? techInput.split(',').map(t => t.trim()) : [];
+<script>
+  // Typed effect
+  const phrases = ['Développeur Web','Infographiste','Producteur Audiovisuel','Webmaster','Créateur de Contenus'];
+  let pi=0,ci=0,del=false;
+  const tEl=document.getElementById('typedText');
+  function type(){
+    const cur=phrases[pi];
+    if(!del){tEl.textContent=cur.slice(0,++ci);if(ci===cur.length){del=true;setTimeout(type,1800);return;}}
+    else{tEl.textContent=cur.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;}}
+    setTimeout(type,del?55:90);
+  }
+  type();
 
-      const sizes = ['normal', 'wide', 'large'];
-      const randomSize = sizes[Math.floor(Math.random() * sizes.length)];
+  // Nav active
+  const secs=document.querySelectorAll('section[id]');
+  const nls=document.querySelectorAll('nav ul a');
+  window.addEventListener('scroll',()=>{
+    const top=window.scrollY+100;
+    secs.forEach(s=>{if(top>=s.offsetTop&&top<s.offsetTop+s.offsetHeight)nls.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+s.id));});
+  });
 
-      const newProj = {
-        id: Date.now(),
-        title,
-        category,
-        desc,
-        tech,
-        link,
-        emoji: selectedEmoji,
-        size: randomSize
-      };
+  // Mobile nav
+  document.getElementById('mobileToggle').addEventListener('click',()=>document.getElementById('mainNav').classList.toggle('open'));
 
-      projects.push(newProj);
-      renderProjects();
-      
-      // Reset form
-      document.getElementById('projTitle').value = '';
-      document.getElementById('projDesc').value = '';
-      document.getElementById('projTech').value = '';
-      document.getElementById('projLink').value = '';
-      showToast();
-    }
+  // Skill bars
+  new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting) document.querySelectorAll('.progress-bar').forEach(b=>b.style.width=b.dataset.width+'%');
+  },{threshold:.3}).observe(document.querySelector('.skills-showcase'));
 
-    function removeProject(id) {
-      projects = projects.filter(p => p.id !== id);
-      renderProjects();
-    }
+  // Portfolio
+  let projects=[],currentFilter='all',pickedEmoji='💻';
 
-    function showToast() {
-      const toast = document.getElementById('toast');
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 3000);
-    }
+  function pickEmoji(el){document.querySelectorAll('.emoji-opt').forEach(e=>e.classList.remove('sel'));el.classList.add('sel');pickedEmoji=el.dataset.e;}
 
-    // Gestionnaires de filtres
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        renderProjects(this.getAttribute('data-filter'));
-      });
+  function openModal(){document.getElementById('modalOverlay').classList.add('open');document.body.style.overflow='hidden';}
+  function closeModal(){document.getElementById('modalOverlay').classList.remove('open');document.body.style.overflow='';resetForm();}
+  document.getElementById('modalOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeModal();});
+
+  function resetForm(){
+    ['pTitle','pDesc','pTech','pYear','pLink'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('pCat').selectedIndex=0;
+    pickedEmoji='💻';
+    document.querySelectorAll('.emoji-opt').forEach(e=>e.classList.remove('sel'));
+    document.querySelector('.emoji-opt[data-e="💻"]').classList.add('sel');
+  }
+
+  function addProject(){
+    const title=document.getElementById('pTitle').value.trim();
+    const desc=document.getElementById('pDesc').value.trim();
+    if(!title||!desc){alert('Veuillez remplir le titre et la description.');return;}
+    const sel=document.getElementById('pCat');
+    projects.push({
+      id:Date.now(),title,desc,
+      cat:sel.value,
+      catLabel:sel.options[sel.selectedIndex].text.replace(/^[^\s]+\s/,''),
+      tech:document.getElementById('pTech').value.split(',').map(t=>t.trim()).filter(Boolean),
+      year:document.getElementById('pYear').value.trim()||new Date().getFullYear(),
+      link:document.getElementById('pLink').value.trim(),
+      emoji:pickedEmoji
     });
+    renderPortfolio();
+    closeModal();
+    showToast('✅ Projet ajouté au portfolio !');
+  }
 
-    // Rendu initial
-    renderProjects();
-  </script>
+  function removeProject(id){projects=projects.filter(p=>p.id!==id);renderPortfolio();}
+
+  function renderPortfolio(){
+    const grid=document.getElementById('portfolioGrid');
+    const empty=document.getElementById('emptyState');
+    const bottom=document.getElementById('portfolioBottom');
+    grid.querySelectorAll('.portfolio-card').forEach(c=>c.remove());
+    const filtered=currentFilter==='all'?projects:projects.filter(p=>p.cat===currentFilter);
+    if(projects.length===0){empty.style.display='';bottom.style.display='none';return;}
+    empty.style.display='none';
+    bottom.style.display=filtered.length>0?'flex':'none';
+    filtered.forEach(p=>{
+      const card=document.createElement('div');
+      card.className='portfolio-card';
+      card.innerHTML=`
+        <div class="portfolio-image-container">
+          <div class="portfolio-thumb">
+            <div class="pthumb-bg" style="background:linear-gradient(135deg,rgba(255,77,79,.2),rgba(255,130,80,.15))"></div>
+            <span style="position:relative;z-index:1">${p.emoji}</span>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="project-category">${esc(p.catLabel)}</span>
+              <h4>${esc(p.title)}</h4>
+            </div>
+            <div class="portfolio-actions">
+              ${p.link?`<a href="${esc(p.link)}" target="_blank" class="p-btn" title="Voir le projet"><i class="bi bi-box-arrow-up-right"></i></a>`:''}
+              <button class="p-btn del" title="Supprimer" onclick="removeProject(${p.id})"><i class="bi bi-trash"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-meta">
+          <div class="project-tags">${p.tech.slice(0,3).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
+          <div class="project-year">${esc(String(p.year))}</div>
+        </div>`;
+      grid.appendChild(card);
+    });
+  }
+
+  document.getElementById('filterBtns').addEventListener('click',e=>{
+    const btn=e.target.closest('.filter-btn');
+    if(!btn)return;
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter=btn.dataset.filter;
+    renderPortfolio();
+  });
+
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+  function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3200);}
+</script>
 </body>
 </html>
